@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="471411" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:12:51 IDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="471411" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:12:51 IDT">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@466cf502]" name="setup" is-config="true" duration-ms="3774" started-at="2023-07-26T21:10:10 IDT" finished-at="2023-07-26T21:10:14 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.LoginTest@466cf502]" name="setupLogin" is-config="true" duration-ms="8708" started-at="2023-07-26T21:10:14 IDT" finished-at="2023-07-26T21:10:22 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method status="PASS" signature="tc01_Login()[pri:0, instance:tests.LoginTest@466cf502]" name="tc01_Login" duration-ms="1523" started-at="2023-07-26T21:10:22 IDT" description="Login with valid data" finished-at="2023-07-26T21:10:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@466cf502]" name="tearDown" is-config="true" duration-ms="1575" started-at="2023-07-26T21:10:24 IDT" finished-at="2023-07-26T21:10:25 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ProjectOptionsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setup" is-config="true" duration-ms="2987" started-at="2023-07-26T21:05:35 IDT" finished-at="2023-07-26T21:05:38 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupLogin" is-config="true" duration-ms="8922" started-at="2023-07-26T21:05:38 IDT" finished-at="2023-07-26T21:05:46 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupRatingPopUp" is-config="true" duration-ms="7071" started-at="2023-07-26T21:05:46 IDT" finished-at="2023-07-26T21:05:53 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRatingPopUp -->
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupWorkSpace" is-config="true" duration-ms="4252" started-at="2023-07-26T21:05:53 IDT" finished-at="2023-07-26T21:05:58 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkSpace -->
+        <test-method status="PASS" signature="tc01_previewProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc01_previewProject" duration-ms="66398" started-at="2023-07-26T21:05:58 IDT" description="Open preview project" finished-at="2023-07-26T21:07:04 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_previewProject -->
+        <test-method status="FAIL" signature="tc02_publishProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc02_publishProject" duration-ms="76295" started-at="2023-07-26T21:07:04 IDT" description="Publish a project" finished-at="2023-07-26T21:08:20 IDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [you need a paid plan to be able to publish.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [you need a paid plan to be able to publish.] but found []
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at tests.ProjectOptionsTest.tc02_publishProject(ProjectOptionsTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_publishProject -->
+        <test-method status="PASS" signature="tc03_deleteProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc03_deleteProject" duration-ms="67409" started-at="2023-07-26T21:08:20 IDT" description="Delete a project" finished-at="2023-07-26T21:09:28 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_deleteProject -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tearDown" is-config="true" duration-ms="1187" started-at="2023-07-26T21:09:28 IDT" finished-at="2023-07-26T21:09:29 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProjectOptionsTest -->
+      <class name="tests.SortTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SortTest@9573b3b]" name="setup" is-config="true" duration-ms="10424" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:05:10 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.SortTest@9573b3b]" name="setupLogin" is-config="true" duration-ms="9103" started-at="2023-07-26T21:05:10 IDT" finished-at="2023-07-26T21:05:19 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.SortTest@9573b3b]" name="setupRatingPopUp" is-config="true" duration-ms="7175" started-at="2023-07-26T21:05:19 IDT" finished-at="2023-07-26T21:05:26 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRatingPopUp -->
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.SortTest@9573b3b]" name="setupWorkSpace" is-config="true" duration-ms="4257" started-at="2023-07-26T21:05:26 IDT" finished-at="2023-07-26T21:05:30 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkSpace -->
+        <test-method status="PASS" signature="tc01_sortByNameAsc()[pri:0, instance:tests.SortTest@9573b3b]" name="tc01_sortByNameAsc" duration-ms="1464" started-at="2023-07-26T21:05:30 IDT" description="Sort the projects in ascending order by name" finished-at="2023-07-26T21:05:32 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_sortByNameAsc -->
+        <test-method status="PASS" signature="tc02_sortByNameDesc()[pri:0, instance:tests.SortTest@9573b3b]" name="tc02_sortByNameDesc" duration-ms="1368" started-at="2023-07-26T21:05:32 IDT" description="Sort the projects in descending order by name" finished-at="2023-07-26T21:05:33 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_sortByNameDesc -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SortTest@9573b3b]" name="tearDown" is-config="true" duration-ms="1237" started-at="2023-07-26T21:05:33 IDT" finished-at="2023-07-26T21:05:35 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SortTest -->
+      <class name="tests.ProjectsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setup" is-config="true" duration-ms="3145" started-at="2023-07-26T21:10:25 IDT" finished-at="2023-07-26T21:10:29 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupLogin" is-config="true" duration-ms="8948" started-at="2023-07-26T21:10:29 IDT" finished-at="2023-07-26T21:10:38 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupRatingPopUp" is-config="true" duration-ms="7221" started-at="2023-07-26T21:10:38 IDT" finished-at="2023-07-26T21:10:45 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRatingPopUp -->
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupWorkSpace" is-config="true" duration-ms="4234" started-at="2023-07-26T21:10:45 IDT" finished-at="2023-07-26T21:10:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkSpace -->
+        <test-method status="PASS" signature="tc01_addNewProject()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tc01_addNewProject" duration-ms="60769" started-at="2023-07-26T21:10:49 IDT" description="Add a new Project" finished-at="2023-07-26T21:11:50 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_addNewProject -->
+        <test-method status="PASS" signature="tc02_searchProject()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tc02_searchProject" duration-ms="59263" started-at="2023-07-26T21:11:50 IDT" description="Search for a project in the workspace" finished-at="2023-07-26T21:12:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_searchProject -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tearDown" is-config="true" duration-ms="1578" started-at="2023-07-26T21:12:49 IDT" finished-at="2023-07-26T21:12:51 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProjectsTest -->
+      <class name="tests.FailedLoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="setup" is-config="true" duration-ms="3382" started-at="2023-07-26T21:09:29 IDT" finished-at="2023-07-26T21:09:32 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="9938" started-at="2023-07-26T21:09:32 IDT" data-provider="getData" finished-at="2023-07-26T21:09:42 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[levyamit88@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[121212]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_failedLogin -->
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="6611" started-at="2023-07-26T21:09:42 IDT" data-provider="getData" finished-at="2023-07-26T21:09:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[levy1111@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa12121212@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_failedLogin -->
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="6635" started-at="2023-07-26T21:09:49 IDT" data-provider="getData" finished-at="2023-07-26T21:09:56 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amitlevy88@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa13131313#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_failedLogin -->
+        <test-method status="PASS" signature="tc02_failedLogin()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc02_failedLogin" duration-ms="6579" started-at="2023-07-26T21:09:56 IDT" description="Login with invalid Email address" finished-at="2023-07-26T21:10:02 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_failedLogin -->
+        <test-method status="PASS" signature="tc03_failedLogin()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc03_failedLogin" duration-ms="6606" started-at="2023-07-26T21:10:02 IDT" description="Login with invalid password" finished-at="2023-07-26T21:10:09 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_failedLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tearDown" is-config="true" duration-ms="1072" started-at="2023-07-26T21:10:09 IDT" finished-at="2023-07-26T21:10:10 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FailedLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

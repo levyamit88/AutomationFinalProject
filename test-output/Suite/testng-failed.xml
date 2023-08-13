@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.ProjectsTest">
+        <methods>
+          <include name="tc01_addNewProject"/>
+          <include name="setupRatingPopUp"/>
+          <include name="tearDown"/>
+          <include name="setupLogin"/>
+          <include name="tc02_searchProject"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ProjectsTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupLogin"/>
+          <include name="tc01_Login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.SortTest">
+        <methods>
+          <include name="tc01_sortByNameAsc"/>
+          <include name="setupRatingPopUp"/>
+          <include name="tearDown"/>
+          <include name="setupLogin"/>
+          <include name="tc02_sortByNameDesc"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SortTest -->
+      <class name="tests.ProjectOptionsTest">
+        <methods>
+          <include name="tc01_previewProject"/>
+          <include name="tc03_deleteProject"/>
+          <include name="tc02_publishProject"/>
+          <include name="setupRatingPopUp"/>
+          <include name="tearDown"/>
+          <include name="setupLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ProjectOptionsTest -->
+      <class name="tests.FailedLoginTest">
+        <methods>
+          <include name="tc02_failedLogin"/>
+          <include name="tc01_failedLogin"/>
+          <include name="tearDown"/>
+          <include name="tc03_failedLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.FailedLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
