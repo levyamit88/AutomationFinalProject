@@ -7,9 +7,13 @@
         <methods>
           <include name="tc01_previewProject"/>
           <include name="setupRatingPopUp"/>
+          <include name="failedTest"/>
+          <include name="tearDown"/>
           <include name="setupLogin"/>
+          <include name="tc02_deleteProject"/>
           <include name="setup"/>
           <include name="setupWorkSpace"/>
+          <include name="tc03_publishProject"/>
         </methods>
       </class> <!-- tests.ProjectOptionsTest -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 26 21:04:59 IDT 2023</td>
+<td>Started on:</td><td>Thu Sep 21 12:34:59 IDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>471 seconds (471411 ms)</td>
+<tr><td>Total time:</td><td>416 seconds (416835 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ProjectOptionsTest.tc02_publishProject()'><b>tc02_publishProject</b><br>Test class: tests.ProjectOptionsTest<br>Test method: Publish a project</td>
+<td title='tests.ProjectOptionsTest.tc03_publishProject()'><b>tc03_publishProject</b><br>Test class: tests.ProjectOptionsTest<br>Test method: Publish a project</td>
 <td><div><pre>java.lang.AssertionError: expected [you need a paid plan to be able to publish.] but found []
-	at tests.ProjectOptionsTest.tc02_publishProject(ProjectOptionsTest.java:49)
+	at tests.ProjectOptionsTest.tc03_publishProject(ProjectOptionsTest.java:64)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572952447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1572952447'><pre>java.lang.AssertionError: expected [you need a paid plan to be able to publish.] but found []
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace465112397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace465112397'><pre>java.lang.AssertionError: expected [you need a paid plan to be able to publish.] but found []
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at tests.ProjectOptionsTest.tc02_publishProject(ProjectOptionsTest.java:49)
+	at tests.ProjectOptionsTest.tc03_publishProject(ProjectOptionsTest.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,16 +113,16 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.runSuites(TestNG.java:1092)
 	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>76</td>
-<td>tests.ProjectOptionsTest@24a1c17f</td></tr>
+<td>45</td>
+<td>tests.ProjectOptionsTest@74f7d1d2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,65 +132,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ProjectsTest.tc02_searchProject()'><b>tc02_searchProject</b><br>Test class: tests.ProjectsTest<br>Test method: Search for a project in the workspace</td>
-<td></td>
-<td>59</td>
-<td>tests.ProjectsTest@5b800468</td></tr>
-<tr>
-<td title='tests.FailedLoginTest.tc01_failedLogin()'><b>tc01_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Parameters: levy1111@gmail.com, Aa12121212@</td>
-<td></td>
-<td>6</td>
-<td>tests.FailedLoginTest@4d63b624</td></tr>
-<tr>
-<td title='tests.ProjectOptionsTest.tc03_deleteProject()'><b>tc03_deleteProject</b><br>Test class: tests.ProjectOptionsTest<br>Test method: Delete a project</td>
-<td></td>
-<td>67</td>
-<td>tests.ProjectOptionsTest@24a1c17f</td></tr>
-<tr>
-<td title='tests.ProjectsTest.tc01_addNewProject()'><b>tc01_addNewProject</b><br>Test class: tests.ProjectsTest<br>Test method: Add a new Project</td>
-<td></td>
-<td>60</td>
-<td>tests.ProjectsTest@5b800468</td></tr>
-<tr>
-<td title='tests.FailedLoginTest.tc03_failedLogin()'><b>tc03_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Test method: Login with invalid password</td>
-<td></td>
-<td>6</td>
-<td>tests.FailedLoginTest@4d63b624</td></tr>
-<tr>
 <td title='tests.FailedLoginTest.tc01_failedLogin()'><b>tc01_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Parameters: levyamit88@gmail.com, 121212</td>
 <td></td>
+<td>10</td>
+<td>tests.FailedLoginTest@7fe083b1</td></tr>
+<tr>
+<td title='tests.FailedLoginTest.tc01_failedLogin()'><b>tc01_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Parameters: amitlevy88@gmail.com, Aa13131313#</td>
+<td></td>
 <td>9</td>
-<td>tests.FailedLoginTest@4d63b624</td></tr>
+<td>tests.FailedLoginTest@7fe083b1</td></tr>
 <tr>
-<td title='tests.SortTest.tc01_sortByNameAsc()'><b>tc01_sortByNameAsc</b><br>Test class: tests.SortTest<br>Test method: Sort the projects in ascending order by name</td>
+<td title='tests.ProjectsTest.tc02_searchProject()'><b>tc02_searchProject</b><br>Test class: tests.ProjectsTest<br>Test method: Search for a project in the workspace</td>
 <td></td>
-<td>1</td>
-<td>tests.SortTest@9573b3b</td></tr>
+<td>2</td>
+<td>tests.ProjectsTest@23c388c2</td></tr>
 <tr>
-<td title='tests.LoginTest.tc01_Login()'><b>tc01_Login</b><br>Test class: tests.LoginTest<br>Test method: Login with valid data</td>
+<td title='tests.ProjectOptionsTest.tc02_deleteProject()'><b>tc02_deleteProject</b><br>Test class: tests.ProjectOptionsTest<br>Test method: Delete a project</td>
 <td></td>
-<td>1</td>
-<td>tests.LoginTest@466cf502</td></tr>
-<tr>
-<td title='tests.FailedLoginTest.tc02_failedLogin()'><b>tc02_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Test method: Login with invalid Email address</td>
-<td></td>
-<td>6</td>
-<td>tests.FailedLoginTest@4d63b624</td></tr>
+<td>61</td>
+<td>tests.ProjectOptionsTest@74f7d1d2</td></tr>
 <tr>
 <td title='tests.SortTest.tc02_sortByNameDesc()'><b>tc02_sortByNameDesc</b><br>Test class: tests.SortTest<br>Test method: Sort the projects in descending order by name</td>
 <td></td>
 <td>1</td>
-<td>tests.SortTest@9573b3b</td></tr>
+<td>tests.SortTest@486be205</td></tr>
 <tr>
-<td title='tests.FailedLoginTest.tc01_failedLogin()'><b>tc01_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Parameters: amitlevy88@gmail.com, Aa13131313#</td>
+<td title='tests.ProjectsTest.tc01_addNewProject()'><b>tc01_addNewProject</b><br>Test class: tests.ProjectsTest<br>Test method: Add a new Project</td>
 <td></td>
-<td>6</td>
-<td>tests.FailedLoginTest@4d63b624</td></tr>
+<td>50</td>
+<td>tests.ProjectsTest@23c388c2</td></tr>
+<tr>
+<td title='tests.SortTest.tc01_sortByNameAsc()'><b>tc01_sortByNameAsc</b><br>Test class: tests.SortTest<br>Test method: Sort the projects in ascending order by name</td>
+<td></td>
+<td>1</td>
+<td>tests.SortTest@486be205</td></tr>
+<tr>
+<td title='tests.FailedLoginTest.tc02_failedLogin()'><b>tc02_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Test method: Login with invalid Email address</td>
+<td></td>
+<td>9</td>
+<td>tests.FailedLoginTest@7fe083b1</td></tr>
+<tr>
+<td title='tests.LoginTest.tc01_login()'><b>tc01_login</b><br>Test class: tests.LoginTest<br>Test method: Login with correct data</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@1a6f2363</td></tr>
+<tr>
+<td title='tests.WorkspacesTest.tc02_deleteWorkspace()'><b>tc02_deleteWorkspace</b><br>Test class: tests.WorkspacesTest<br>Test method: Delete a workspace</td>
+<td></td>
+<td>31</td>
+<td>tests.WorkspacesTest@4b4dd216</td></tr>
+<tr>
+<td title='tests.FailedLoginTest.tc03_failedLogin()'><b>tc03_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Test method: Login with invalid password</td>
+<td></td>
+<td>9</td>
+<td>tests.FailedLoginTest@7fe083b1</td></tr>
+<tr>
+<td title='tests.FailedLoginTest.tc01_failedLogin()'><b>tc01_failedLogin</b><br>Test class: tests.FailedLoginTest<br>Parameters: levy1111@gmail.com, Aa12121212@</td>
+<td></td>
+<td>9</td>
+<td>tests.FailedLoginTest@7fe083b1</td></tr>
+<tr>
+<td title='tests.WorkspacesTest.tc01_addNewWorkspace()'><b>tc01_addNewWorkspace</b><br>Test class: tests.WorkspacesTest<br>Test method: Add a new workspace</td>
+<td></td>
+<td>10</td>
+<td>tests.WorkspacesTest@4b4dd216</td></tr>
 <tr>
 <td title='tests.ProjectOptionsTest.tc01_previewProject()'><b>tc01_previewProject</b><br>Test class: tests.ProjectOptionsTest<br>Test method: Open preview project</td>
 <td></td>
-<td>66</td>
-<td>tests.ProjectOptionsTest@24a1c17f</td></tr>
+<td>24</td>
+<td>tests.ProjectOptionsTest@74f7d1d2</td></tr>
 </table><p>
 </body>
 </html>

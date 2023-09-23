@@ -6,8 +6,9 @@
       <class name="tests.ProjectOptionsTest">
         <methods>
           <include name="setupWorkSpace"/>
-          <include name="tc02_publishProject"/>
           <include name="setupRatingPopUp"/>
+          <include name="failedTest"/>
+          <include name="tc03_publishProject"/>
           <include name="setupLogin"/>
           <include name="tearDown"/>
           <include name="setup"/>

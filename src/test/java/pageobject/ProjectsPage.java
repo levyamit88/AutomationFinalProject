@@ -26,7 +26,7 @@ public class ProjectsPage extends MenuAllPage {
 	private WebElement newProjectBtn;
 	@FindBy(css = ".w-72")
 	private List<WebElement> projectStart;
-	@FindBy(css = ".flex-nowrap>.whitespace-nowrap:nth-child(1)")
+	@FindBy(css = ".whitespace-nowrap:nth-child(1)")
 	private WebElement totalProject;
 	@FindBy(css = "[placeholder^='Search for projects']")
 	private WebElement searchField;
@@ -49,9 +49,13 @@ public class ProjectsPage extends MenuAllPage {
 	@FindBy(css = ".block.pr-4")
 	private List<WebElement> workspaceOptions;
 	@FindBy(css = "[id^='text']")
-	private WebElement renameField;
+	private WebElement deleteField;
 	@FindBy(css = ".ml-auto>.inline-block")
-	private List<WebElement> renameWorkspaceOptions;
+	private List<WebElement> deleteWorkspaceOptions;
+	@FindBy(css = "[data-intercom-target='project-overview-new-project-btn']")
+	private WebElement newProjectBtn2;
+	@FindBy(css = "[data-intercom-target^='new-project-from']")
+	private List<WebElement> projectStart2;
 
 //	Testing methods
 	public void getProjectOptions(String projectName, String optionName) {
@@ -61,8 +65,8 @@ public class ProjectsPage extends MenuAllPage {
 				WebElement optionsArrow = elArea.findElement(By.cssSelector("[aria-labelledby='arrow-down']"));
 				click(optionsArrow);
 				for (WebElement el : optionBtn) {
-					if (el.getText().equalsIgnoreCase(optionName)) {
-						el.click();
+					if (getText(el).equalsIgnoreCase(optionName)) {
+						click(el);
 						break;
 					}
 				}
@@ -72,11 +76,21 @@ public class ProjectsPage extends MenuAllPage {
 	}
 
 	public void addNewProjectBtn(String projectType) {
-		click(newProjectBtn);
-		for (WebElement el : projectStart) {
-			if (getText(el).toLowerCase().contains(projectType)) {
-				click(el);
-				break;
+		try {
+			click(newProjectBtn2);
+			for (WebElement el : projectStart2) {
+				if (getText(el).toLowerCase().contains(projectType)) {
+					click(el);
+					break;
+				}
+			}
+		} catch (Exception e) {
+			click(newProjectBtn);
+			for (WebElement el : projectStart) {
+				if (getText(el).toLowerCase().contains(projectType)) {
+					click(el);
+					break;
+				}
 			}
 		}
 
@@ -130,12 +144,12 @@ public class ProjectsPage extends MenuAllPage {
 		}
 	}
 
-	public void renameWorkspaceOption(String name, String btnName) {
+	public void deleteWorkspaceOption(String name, String btnName) {
 		for (WebElement el : workspaceOptions) {
-			if (getText(el).toLowerCase().contains("rename")) {
+			if (getText(el).toLowerCase().contains(btnName)) {
 				click(el);
-				fillText(renameField, name);
-				for (WebElement el1 : renameWorkspaceOptions) {
+				fillText(deleteField, name);
+				for (WebElement el1 : deleteWorkspaceOptions) {
 					if (getText(el1).toLowerCase().contains(btnName)) {
 						click(el1);
 						break;
@@ -145,11 +159,24 @@ public class ProjectsPage extends MenuAllPage {
 		}
 	}
 
+//	מחיקת כל הפרויקטים ששמרתי
+	public void deleteAll() {
+		List<WebElement> list = driver.findElements(
+				By.cssSelector("[data-intercom-target='project-overview-project-area']>div:nth-child(2)>.relative"));
+		for (int i = 0; i < list.size(); i++) {
+			click(driver.findElement(By.cssSelector("[aria-labelledby='arrow-down']")));
+			click(driver.findElement(By.cssSelector(
+					"#app > div:nth-child(4) > div > div > div.mt-8.md\\:mt-0.md\\:col-span-8.lg\\:col-span-9 > div.grid.gap-x-4.gap-y-4.px-4.mt-6.sm\\:px-0.lg\\:mt-8.lg\\:gap-y-6.lg\\:gap-x-6.xs\\:grid-cols-2.md\\:grid-cols-2.lg\\:grid-cols-3 > div > div.absolute.right-0.left-0.mt-8.mx-3.z-100.flex-1 > div.flex.items-center.justify-between.mb-2 > div.flex.justify-right.items-center > div > ul > li .pl-4.pr-4.text-red-600")));
+			click(driver.findElement(By.cssSelector(".inline-block.bg-red-600")));
+		}
+	}
+
 //	Validations methods	
 	public int getProjectNumber() {
 		String total = getText(totalProject);
 		int projectNumber = Integer.parseInt(total.replaceAll("[^0-9]+", ""));
 		return projectNumber;
+
 	}
 
 	public boolean itIsSearching(String projectName) {
@@ -189,6 +216,14 @@ public class ProjectsPage extends MenuAllPage {
 	}
 
 	public int workspacesNumber() {
+		List<WebElement> list = driver.findElements(By.cssSelector(".px-2 .mr-3.truncate"));
+		for (int i = 0; i < list.size(); i++) {
+
+		}
+		return list.size();
+	}
+
+	public int isWorkSpacedeleted(String name) {
 		List<WebElement> list = driver.findElements(By.cssSelector(".px-2 .mr-3.truncate"));
 		for (int i = 0; i < list.size(); i++) {
 

@@ -34,8 +34,10 @@ public class LoginPage extends BasePage {
 	}
 
 	public void cookiesWindow() {
-		if (isDisplayed(cookiesAcceptBtn)) {
+		try {
+			waiting(500);
 			click(cookiesAcceptBtn);
+		} catch (Exception e) {
 		}
 	}
 

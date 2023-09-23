@@ -15,8 +15,8 @@ public class LoginTest extends BaseTest{
 		super.setupWorkSpace();
 	}
 	
-	@Test(description = "Login with valid data")
-	public void tc01_Login() {
+	@Test(description = "Login with correct data")
+	public void tc01_login() {
 		ProjectsPage pp = new ProjectsPage(driver);
 		String expected = "amit";
 		Assert.assertEquals(pp.itIsMyAccount(), expected);

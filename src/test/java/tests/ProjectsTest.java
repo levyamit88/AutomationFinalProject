@@ -16,7 +16,7 @@ public class ProjectsTest extends BaseTest {
 		pp.addNewProjectBtn("start from template");
 		ChooseTemplatesPage ctp = new ChooseTemplatesPage(driver);
 		ctp.chooseTemplateType("application type", "personality test");
-		ctp.chooseTemplate("what's your travel type?");
+		ctp.chooseTemplate("what diet is best for you?");
 		ChooseProjectTypePage cpt = new ChooseProjectTypePage(driver);
 		cpt.fillProjectName("Add new project test");
 		cpt.chooseProjectType("answer-based outcomes");
@@ -28,16 +28,13 @@ public class ProjectsTest extends BaseTest {
 	@Test(description = "Search for a project in the workspace")
 	public void tc02_searchProject() {
 		ProjectsPage pp = new ProjectsPage(driver);
-		pp.addNewProjectBtn("start from template");
-		ChooseTemplatesPage ctp = new ChooseTemplatesPage(driver);
-		ctp.chooseTemplateType("application type", "personality test");
-		ctp.chooseTemplate("what's your travel type?");
-		ChooseProjectTypePage cpt = new ChooseProjectTypePage(driver);
-		cpt.fillProjectName("My Favorite Travel");
-		cpt.chooseProjectType("answer-based outcomes");
-		CreateProjectPage cpp = new CreateProjectPage(driver);
-		cpp.backToMyWorkspace();
-		pp.search("my favorite travel");
-		Assert.assertTrue(pp.itIsSearching("my favorite travel"));
+		pp.search("search project test");
+		Assert.assertTrue(pp.itIsSearching("search project test"));
 	}
+	
+//	@Test
+//	public void deletAllProjects() {
+//		ProjectsPage pp = new ProjectsPage(driver);
+//		pp.deleteAll();
+//	}
 }

@@ -1,51 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
+<testng-results skipped="0" failed="1" ignored="0" total="15" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="471411" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:12:51 IDT">
+  <suite name="Suite" duration-ms="416835" started-at="2023-09-21T12:34:59 IDT" finished-at="2023-09-21T12:41:55 IDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="471411" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:12:51 IDT">
+    <test name="Test" duration-ms="416835" started-at="2023-09-21T12:34:59 IDT" finished-at="2023-09-21T12:41:55 IDT">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@466cf502]" name="setup" is-config="true" duration-ms="3774" started-at="2023-07-26T21:10:10 IDT" finished-at="2023-07-26T21:10:14 IDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@1a6f2363]" name="setup" is-config="true" duration-ms="13506" started-at="2023-09-21T12:34:59 IDT" finished-at="2023-09-21T12:35:12 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.LoginTest@466cf502]" name="setupLogin" is-config="true" duration-ms="8708" started-at="2023-07-26T21:10:14 IDT" finished-at="2023-07-26T21:10:22 IDT">
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.LoginTest@1a6f2363]" name="setupLogin" is-config="true" duration-ms="10456" started-at="2023-09-21T12:35:12 IDT" finished-at="2023-09-21T12:35:23 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogin -->
-        <test-method status="PASS" signature="tc01_Login()[pri:0, instance:tests.LoginTest@466cf502]" name="tc01_Login" duration-ms="1523" started-at="2023-07-26T21:10:22 IDT" description="Login with valid data" finished-at="2023-07-26T21:10:24 IDT">
+        <test-method status="PASS" signature="tc01_login()[pri:0, instance:tests.LoginTest@1a6f2363]" name="tc01_login" duration-ms="2603" started-at="2023-09-21T12:35:23 IDT" description="Login with correct data" finished-at="2023-09-21T12:35:25 IDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc01_Login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@466cf502]" name="tearDown" is-config="true" duration-ms="1575" started-at="2023-07-26T21:10:24 IDT" finished-at="2023-07-26T21:10:25 IDT">
+        </test-method> <!-- tc01_login -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1a6f2363]" name="failedTest" is-config="true" duration-ms="9" started-at="2023-09-21T12:35:26 IDT" finished-at="2023-09-21T12:35:26 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_login status=SUCCESS method=LoginTest.tc01_login()[pri:0, instance:tests.LoginTest@1a6f2363] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@1a6f2363]" name="tearDown" is-config="true" duration-ms="1890" started-at="2023-09-21T12:35:26 IDT" finished-at="2023-09-21T12:35:28 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.ProjectOptionsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setup" is-config="true" duration-ms="2987" started-at="2023-07-26T21:05:35 IDT" finished-at="2023-07-26T21:05:38 IDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="setup" is-config="true" duration-ms="3508" started-at="2023-09-21T12:38:11 IDT" finished-at="2023-09-21T12:38:14 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupLogin" is-config="true" duration-ms="8922" started-at="2023-07-26T21:05:38 IDT" finished-at="2023-07-26T21:05:46 IDT">
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="setupLogin" is-config="true" duration-ms="9629" started-at="2023-09-21T12:38:14 IDT" finished-at="2023-09-21T12:38:24 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogin -->
-        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupRatingPopUp" is-config="true" duration-ms="7071" started-at="2023-07-26T21:05:46 IDT" finished-at="2023-07-26T21:05:53 IDT">
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="setupRatingPopUp" is-config="true" duration-ms="7652" started-at="2023-09-21T12:38:24 IDT" finished-at="2023-09-21T12:38:31 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupRatingPopUp -->
-        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="setupWorkSpace" is-config="true" duration-ms="4252" started-at="2023-07-26T21:05:53 IDT" finished-at="2023-07-26T21:05:58 IDT">
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="setupWorkSpace" is-config="true" duration-ms="4325" started-at="2023-09-21T12:38:31 IDT" finished-at="2023-09-21T12:38:36 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWorkSpace -->
-        <test-method status="PASS" signature="tc01_previewProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc01_previewProject" duration-ms="66398" started-at="2023-07-26T21:05:58 IDT" description="Open preview project" finished-at="2023-07-26T21:07:04 IDT">
+        <test-method status="PASS" signature="tc01_previewProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="tc01_previewProject" duration-ms="24914" started-at="2023-09-21T12:38:36 IDT" description="Open preview project" finished-at="2023-09-21T12:39:01 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_previewProject -->
-        <test-method status="FAIL" signature="tc02_publishProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc02_publishProject" duration-ms="76295" started-at="2023-07-26T21:07:04 IDT" description="Publish a project" finished-at="2023-07-26T21:08:20 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:39:01 IDT" finished-at="2023-09-21T12:39:01 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_previewProject status=SUCCESS method=ProjectOptionsTest.tc01_previewProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_deleteProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="tc02_deleteProject" duration-ms="61255" started-at="2023-09-21T12:39:01 IDT" description="Delete a project" finished-at="2023-09-21T12:40:02 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_deleteProject -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:40:02 IDT" finished-at="2023-09-21T12:40:02 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_deleteProject status=SUCCESS method=ProjectOptionsTest.tc02_deleteProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc03_publishProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="tc03_publishProject" duration-ms="45942" started-at="2023-09-21T12:40:02 IDT" description="Publish a project" finished-at="2023-09-21T12:40:48 IDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [you need a paid plan to be able to publish.] but found []]]>
@@ -58,7 +95,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at tests.ProjectOptionsTest.tc02_publishProject(ProjectOptionsTest.java:49)
+at tests.ProjectOptionsTest.tc03_publishProject(ProjectOptionsTest.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,94 +121,145 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 at org.testng.TestNG.runSuites(TestNG.java:1092)
 at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc02_publishProject -->
-        <test-method status="PASS" signature="tc03_deleteProject()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tc03_deleteProject" duration-ms="67409" started-at="2023-07-26T21:08:20 IDT" description="Delete a project" finished-at="2023-07-26T21:09:28 IDT">
+        </test-method> <!-- tc03_publishProject -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="failedTest" is-config="true" duration-ms="256" started-at="2023-09-21T12:40:48 IDT" finished-at="2023-09-21T12:40:48 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_publishProject status=FAILURE method=ProjectOptionsTest.tc03_publishProject()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc03_deleteProject -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectOptionsTest@24a1c17f]" name="tearDown" is-config="true" duration-ms="1187" started-at="2023-07-26T21:09:28 IDT" finished-at="2023-07-26T21:09:29 IDT">
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectOptionsTest@74f7d1d2]" name="tearDown" is-config="true" duration-ms="1224" started-at="2023-09-21T12:40:48 IDT" finished-at="2023-09-21T12:40:49 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProjectOptionsTest -->
       <class name="tests.SortTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SortTest@9573b3b]" name="setup" is-config="true" duration-ms="10424" started-at="2023-07-26T21:04:59 IDT" finished-at="2023-07-26T21:05:10 IDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SortTest@486be205]" name="setup" is-config="true" duration-ms="4007" started-at="2023-09-21T12:37:41 IDT" finished-at="2023-09-21T12:37:45 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.SortTest@9573b3b]" name="setupLogin" is-config="true" duration-ms="9103" started-at="2023-07-26T21:05:10 IDT" finished-at="2023-07-26T21:05:19 IDT">
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.SortTest@486be205]" name="setupLogin" is-config="true" duration-ms="9537" started-at="2023-09-21T12:37:45 IDT" finished-at="2023-09-21T12:37:54 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogin -->
-        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.SortTest@9573b3b]" name="setupRatingPopUp" is-config="true" duration-ms="7175" started-at="2023-07-26T21:05:19 IDT" finished-at="2023-07-26T21:05:26 IDT">
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.SortTest@486be205]" name="setupRatingPopUp" is-config="true" duration-ms="7442" started-at="2023-09-21T12:37:54 IDT" finished-at="2023-09-21T12:38:02 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupRatingPopUp -->
-        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.SortTest@9573b3b]" name="setupWorkSpace" is-config="true" duration-ms="4257" started-at="2023-07-26T21:05:26 IDT" finished-at="2023-07-26T21:05:30 IDT">
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.SortTest@486be205]" name="setupWorkSpace" is-config="true" duration-ms="4304" started-at="2023-09-21T12:38:02 IDT" finished-at="2023-09-21T12:38:06 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWorkSpace -->
-        <test-method status="PASS" signature="tc01_sortByNameAsc()[pri:0, instance:tests.SortTest@9573b3b]" name="tc01_sortByNameAsc" duration-ms="1464" started-at="2023-07-26T21:05:30 IDT" description="Sort the projects in ascending order by name" finished-at="2023-07-26T21:05:32 IDT">
+        <test-method status="PASS" signature="tc01_sortByNameAsc()[pri:0, instance:tests.SortTest@486be205]" name="tc01_sortByNameAsc" duration-ms="1670" started-at="2023-09-21T12:38:06 IDT" description="Sort the projects in ascending order by name" finished-at="2023-09-21T12:38:08 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_sortByNameAsc -->
-        <test-method status="PASS" signature="tc02_sortByNameDesc()[pri:0, instance:tests.SortTest@9573b3b]" name="tc02_sortByNameDesc" duration-ms="1368" started-at="2023-07-26T21:05:32 IDT" description="Sort the projects in descending order by name" finished-at="2023-07-26T21:05:33 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.SortTest@486be205]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-09-21T12:38:08 IDT" finished-at="2023-09-21T12:38:08 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_sortByNameAsc status=SUCCESS method=SortTest.tc01_sortByNameAsc()[pri:0, instance:tests.SortTest@486be205] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_sortByNameDesc()[pri:0, instance:tests.SortTest@486be205]" name="tc02_sortByNameDesc" duration-ms="1689" started-at="2023-09-21T12:38:08 IDT" description="Sort the projects in descending order by name" finished-at="2023-09-21T12:38:09 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_sortByNameDesc -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SortTest@9573b3b]" name="tearDown" is-config="true" duration-ms="1237" started-at="2023-07-26T21:05:33 IDT" finished-at="2023-07-26T21:05:35 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.SortTest@486be205]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-09-21T12:38:09 IDT" finished-at="2023-09-21T12:38:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_sortByNameDesc status=SUCCESS method=SortTest.tc02_sortByNameDesc()[pri:0, instance:tests.SortTest@486be205] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SortTest@486be205]" name="tearDown" is-config="true" duration-ms="1468" started-at="2023-09-21T12:38:09 IDT" finished-at="2023-09-21T12:38:11 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SortTest -->
       <class name="tests.ProjectsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setup" is-config="true" duration-ms="3145" started-at="2023-07-26T21:10:25 IDT" finished-at="2023-07-26T21:10:29 IDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="setup" is-config="true" duration-ms="3088" started-at="2023-09-21T12:36:21 IDT" finished-at="2023-09-21T12:36:24 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupLogin" is-config="true" duration-ms="8948" started-at="2023-07-26T21:10:29 IDT" finished-at="2023-07-26T21:10:38 IDT">
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="setupLogin" is-config="true" duration-ms="9697" started-at="2023-09-21T12:36:24 IDT" finished-at="2023-09-21T12:36:34 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogin -->
-        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupRatingPopUp" is-config="true" duration-ms="7221" started-at="2023-07-26T21:10:38 IDT" finished-at="2023-07-26T21:10:45 IDT">
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="setupRatingPopUp" is-config="true" duration-ms="7626" started-at="2023-09-21T12:36:34 IDT" finished-at="2023-09-21T12:36:42 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupRatingPopUp -->
-        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectsTest@5b800468]" name="setupWorkSpace" is-config="true" duration-ms="4234" started-at="2023-07-26T21:10:45 IDT" finished-at="2023-07-26T21:10:49 IDT">
+        <test-method status="PASS" signature="setupWorkSpace()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="setupWorkSpace" is-config="true" duration-ms="4302" started-at="2023-09-21T12:36:42 IDT" finished-at="2023-09-21T12:36:46 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupWorkSpace -->
-        <test-method status="PASS" signature="tc01_addNewProject()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tc01_addNewProject" duration-ms="60769" started-at="2023-07-26T21:10:49 IDT" description="Add a new Project" finished-at="2023-07-26T21:11:50 IDT">
+        <test-method status="PASS" signature="tc01_addNewProject()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="tc01_addNewProject" duration-ms="50521" started-at="2023-09-21T12:36:46 IDT" description="Add a new Project" finished-at="2023-09-21T12:37:37 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_addNewProject -->
-        <test-method status="PASS" signature="tc02_searchProject()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tc02_searchProject" duration-ms="59263" started-at="2023-07-26T21:11:50 IDT" description="Search for a project in the workspace" finished-at="2023-07-26T21:12:49 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.ProjectsTest@23c388c2]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:37:37 IDT" finished-at="2023-09-21T12:37:37 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_addNewProject status=SUCCESS method=ProjectsTest.tc01_addNewProject()[pri:0, instance:tests.ProjectsTest@23c388c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_searchProject()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="tc02_searchProject" duration-ms="2746" started-at="2023-09-21T12:37:37 IDT" description="Search for a project in the workspace" finished-at="2023-09-21T12:37:39 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_searchProject -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectsTest@5b800468]" name="tearDown" is-config="true" duration-ms="1578" started-at="2023-07-26T21:12:49 IDT" finished-at="2023-07-26T21:12:51 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.ProjectsTest@23c388c2]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:37:39 IDT" finished-at="2023-09-21T12:37:39 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_searchProject status=SUCCESS method=ProjectsTest.tc02_searchProject()[pri:0, instance:tests.ProjectsTest@23c388c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ProjectsTest@23c388c2]" name="tearDown" is-config="true" duration-ms="1291" started-at="2023-09-21T12:37:39 IDT" finished-at="2023-09-21T12:37:41 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProjectsTest -->
       <class name="tests.FailedLoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="setup" is-config="true" duration-ms="3382" started-at="2023-07-26T21:09:29 IDT" finished-at="2023-07-26T21:09:32 IDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="setup" is-config="true" duration-ms="4901" started-at="2023-09-21T12:35:28 IDT" finished-at="2023-09-21T12:35:33 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="9938" started-at="2023-07-26T21:09:32 IDT" data-provider="getData" finished-at="2023-07-26T21:09:42 IDT">
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tc01_failedLogin" duration-ms="10842" started-at="2023-09-21T12:35:33 IDT" data-provider="getData" finished-at="2023-09-21T12:35:43 IDT">
           <params>
             <param index="0">
               <value>
@@ -187,7 +275,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_failedLogin -->
-        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="6611" started-at="2023-07-26T21:09:42 IDT" data-provider="getData" finished-at="2023-07-26T21:09:49 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-09-21T12:35:43 IDT" finished-at="2023-09-21T12:35:43 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_failedLogin status=SUCCESS method=FailedLoginTest.tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tc01_failedLogin" duration-ms="9213" started-at="2023-09-21T12:35:43 IDT" data-provider="getData" finished-at="2023-09-21T12:35:53 IDT">
           <params>
             <param index="0">
               <value>
@@ -203,7 +302,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_failedLogin -->
-        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc01_failedLogin" duration-ms="6635" started-at="2023-07-26T21:09:49 IDT" data-provider="getData" finished-at="2023-07-26T21:09:56 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-09-21T12:35:53 IDT" finished-at="2023-09-21T12:35:53 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_failedLogin status=SUCCESS method=FailedLoginTest.tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tc01_failedLogin" duration-ms="9129" started-at="2023-09-21T12:35:53 IDT" data-provider="getData" finished-at="2023-09-21T12:36:02 IDT">
           <params>
             <param index="0">
               <value>
@@ -219,19 +329,100 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_failedLogin -->
-        <test-method status="PASS" signature="tc02_failedLogin()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc02_failedLogin" duration-ms="6579" started-at="2023-07-26T21:09:56 IDT" description="Login with invalid Email address" finished-at="2023-07-26T21:10:02 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:36:02 IDT" finished-at="2023-09-21T12:36:02 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_failedLogin status=SUCCESS method=FailedLoginTest.tc01_failedLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.FailedLoginTest@7fe083b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_failedLogin()[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tc02_failedLogin" duration-ms="9114" started-at="2023-09-21T12:36:02 IDT" description="Login with invalid Email address" finished-at="2023-09-21T12:36:11 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_failedLogin -->
-        <test-method status="PASS" signature="tc03_failedLogin()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tc03_failedLogin" duration-ms="6606" started-at="2023-07-26T21:10:02 IDT" description="Login with invalid password" finished-at="2023-07-26T21:10:09 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:36:11 IDT" finished-at="2023-09-21T12:36:11 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_failedLogin status=SUCCESS method=FailedLoginTest.tc02_failedLogin()[pri:0, instance:tests.FailedLoginTest@7fe083b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_failedLogin()[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tc03_failedLogin" duration-ms="9088" started-at="2023-09-21T12:36:11 IDT" description="Login with invalid password" finished-at="2023-09-21T12:36:20 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc03_failedLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FailedLoginTest@4d63b624]" name="tearDown" is-config="true" duration-ms="1072" started-at="2023-07-26T21:10:09 IDT" finished-at="2023-07-26T21:10:10 IDT">
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:36:20 IDT" finished-at="2023-09-21T12:36:20 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_failedLogin status=SUCCESS method=FailedLoginTest.tc03_failedLogin()[pri:0, instance:tests.FailedLoginTest@7fe083b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FailedLoginTest@7fe083b1]" name="tearDown" is-config="true" duration-ms="1288" started-at="2023-09-21T12:36:20 IDT" finished-at="2023-09-21T12:36:21 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.FailedLoginTest -->
+      <class name="tests.WorkspacesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="setup" is-config="true" duration-ms="3592" started-at="2023-09-21T12:40:49 IDT" finished-at="2023-09-21T12:40:53 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupLogin()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="setupLogin" is-config="true" duration-ms="9550" started-at="2023-09-21T12:40:53 IDT" finished-at="2023-09-21T12:41:03 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method status="PASS" signature="setupRatingPopUp()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="setupRatingPopUp" is-config="true" duration-ms="9137" started-at="2023-09-21T12:41:03 IDT" finished-at="2023-09-21T12:41:12 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRatingPopUp -->
+        <test-method status="PASS" signature="tc01_addNewWorkspace()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="tc01_addNewWorkspace" duration-ms="10549" started-at="2023-09-21T12:41:12 IDT" description="Add a new workspace" finished-at="2023-09-21T12:41:22 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_addNewWorkspace -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:41:22 IDT" finished-at="2023-09-21T12:41:22 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_addNewWorkspace status=SUCCESS method=WorkspacesTest.tc01_addNewWorkspace()[pri:0, instance:tests.WorkspacesTest@4b4dd216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_deleteWorkspace()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="tc02_deleteWorkspace" duration-ms="31779" started-at="2023-09-21T12:41:22 IDT" description="Delete a workspace" finished-at="2023-09-21T12:41:54 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_deleteWorkspace -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-09-21T12:41:54 IDT" finished-at="2023-09-21T12:41:54 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_deleteWorkspace status=SUCCESS method=WorkspacesTest.tc02_deleteWorkspace()[pri:0, instance:tests.WorkspacesTest@4b4dd216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WorkspacesTest@4b4dd216]" name="tearDown" is-config="true" duration-ms="1420" started-at="2023-09-21T12:41:54 IDT" finished-at="2023-09-21T12:41:55 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WorkspacesTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

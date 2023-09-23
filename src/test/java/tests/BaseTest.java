@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageobject.LoginPage;
 import pageobject.ProjectsPage;
@@ -46,14 +47,14 @@ public class BaseTest {
 		pp.chooseWorkspace("my workspace");	
 	}
 	
-//	@AfterMethod
+	@AfterMethod
 	public void failedTest(ITestResult result) {
 	  //check if the test failed
 		if (result.getStatus() == ITestResult.FAILURE ){
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			File srcFile = ts.getScreenshotAs(OutputType.FILE);
 			try {
-				FileUtils.copyFile(srcFile, new File("./ScreenShots/" + result.getName()+".jpg"));
+				FileUtils.copyFile(srcFile, new File("./FailedScreenShots/" + result.getName()+".jpg"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

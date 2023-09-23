@@ -46,7 +46,7 @@ public class ChooseTemplatesPage extends BasePage {
 			if (getText(elTitle).toLowerCase().contains(templatTitle)) {
 				WebElement elBtn = elArea.findElement(By.cssSelector("a.block.py-2.text-sm.text-white"));
 				Actions a = new Actions(driver);
-				a.moveToElement(elBtn).click().build().perform();
+				a.moveToElement(elBtn).click(elBtn).build().perform();
 				break;
 			}
 		}
